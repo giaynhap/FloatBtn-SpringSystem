@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./SpringSystem.js"></script>
+	<script src="./FloatBtn.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<style  >
+body{
+	margin: 0px;
+}
+.TEXTPANEL{
+	margin: 0;
+	background-color: #43a879;
+	color: white
+}
+
+</style>
+<body>
+ 
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId            : '912333495590130',
+			autoLogAppEvents : true,
+			xfbml            : true,
+			version          : 'v2.11'
+		});
+	};
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div style="height: 1000px" class="TEXTPANEL" >
+	[GiayNhap]
+</div>
+<div id= "messenger-float-button"  class="float-class-btn  messenger-diag">
+
+	<div class="messenger-diag-btn unset"  >
+		<image 
+		unselectable="on"
+		onselectstart="return false;" 
+		class = "btn-icon unset" style="width: 40px;height: 40px;" src="http://ielts-share.com/wp-content/plugins/wp-facebook-messenger/frontend/images/facebook-messenger.svg"/>
+	</div>
+	<div class="messnger-diag-panel panel-hide" id= "messenger-float-button-panel"  >
+		<div  style ="min-width: 300px;min-height: 400px" class="fb-page" data-href="https://www.facebook.com/ketbankhonggoihan" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false"> </div>
+	</div>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		var floatBtn = new FloatButton("messenger-float-button");
+	});
+
+
+</script>
+</html>

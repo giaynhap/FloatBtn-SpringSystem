@@ -44,10 +44,7 @@
  		fixPanelPosition:function()
  		{
  			$(this.panel).css({left:(-$(this.panel).width()+30)+"px"})
- 			$(this.panel).mouseup(function(event){
- 				event.stopPropagation();
-
- 			});
+ 		
  		}
  		,makeTrash:function()
  		{

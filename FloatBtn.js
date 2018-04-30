@@ -13,7 +13,7 @@
  		this.btn  = $("#"+id);
  		this.panel=$("#"+id+"-panel")
  		this.position = this.btn.position();
- 		this.size = [$(window).width(),$(window).height()];
+ 		this.size = [$(window).width(),window.innerHeight];
 
  		this.isChange = false;
  		this.isDrag = false;

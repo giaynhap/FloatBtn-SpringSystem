@@ -104,6 +104,7 @@
 
 		},__click_up:function(e)
 		{
+			this.time= 0;
 			this.isDrag = false;
 			if (this.hasDrag )
 			{
@@ -152,6 +153,8 @@
 			if (this.isLock) return;
 			if (this.isDrag)
 			{
+				this.time++;
+				if (this.time>10)
 				this.hasDrag =true;
 
 				var top = e.clientY-25;

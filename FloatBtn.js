@@ -36,6 +36,8 @@
  			$(this.btn).mouseup(this.__click_up.bind(this))
 
  			this.springSystem.setPoint(this.size[0]-55,this.size[1]-80)
+			this.springSystem.setRoot(this.size[0]-55,this.size[1]-80)
+			
  			this.springSystem.start();
  			this.makeTrash();
  			this.fixPanelPosition();
